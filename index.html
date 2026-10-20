@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>NothingGame</title>
+</head>
+<body>
+  <h1>NothingGame</h1>
+  <p id="message">Can you do nothing?</p>
+  <button id="startBtn">Start</button>
+
+  <script>
+    const message = document.getElementById("message");
+    const startBtn = document.getElementById("startBtn");
+
+    startBtn.addEventListener("click", function () {
+      console.log("clicked");
+      message.textContent = "Now do nothing";
+    });
+  </script>
+</body>
+</html>
